@@ -3,8 +3,8 @@ if (fs.existsSync('.env')) require('dotenv').config({ path: __dirname+'/.env' })
 
 
 //═══════[Required Variables]════════\\
-global.audio= "" ;  
-global.video= "" ;
+global.audio= "true" ;  
+global.video= "true" ;
 global.port =process.env.PORT
 global.appUrl=process.env.APP_URL || ""                       // put your app url here,
 global.email ="jastinmtewa@yahoo.com"
@@ -27,7 +27,7 @@ global.THUMB_IMAGE = process.env.THUMB_IMAGE || process.env.IMAGE || "https://te
 
 global.devs = "923184474176" // Developer Contact
 global.sudo = process.env.SUDO ? process.env.SUDO.replace(/[\s+]/g, '') : "null";
-global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "255698101622";
+global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]/g, '') : "2349153355436";
 
 
 
@@ -35,27 +35,27 @@ global.owner= process.env.OWNER_NUMBER ? process.env.OWNER_NUMBER.replace(/[\s+]
 //========================= [ BOT SETTINGS ] =========================\\
 global.style = process.env.STYLE   || '3',  // put '1' to "5" here to check bot styles
 global.flush = process.env.FLUSH   || "true"; // Make it "true" if bot not responed
-global.gdbye = process.env.GOODBYE || "false"; 
-global.wlcm  = process.env.WELCOME || "false";  // Make it "false" for disable WELCOME 
+global.gdbye = process.env.GOODBYE || "true"; 
+global.wlcm  = process.env.WELCOME || "true";  // Make it "false" for disable WELCOME 
 
 global.warncount = process.env.WARN_COUNT || 5,
 global.disablepm = process.env.DISABLE_PM || "true",
 global.MsgsInLog = process.env.MSGS_IN_LOG|| "false", // "true"  to see messages , "log" to open logs , "false" to hide logs messages
 global.userImages= process.env.USER_IMAGES|| "text",
-global.waPresence= process.env.WAPRESENCE ||  "set according to your need" ; // 'unavailable' | 'available' | 'composing' | 'recording' | 'paused'
+global.waPresence= process.env.WAPRESENCE ||  "in d studios " ; // 'unavailable' | 'available' | 'composing' | 'recording' | 'paused'
 
 
 //========================= [ AUTO READ MSGS & CMDS ] =========================\\
-global.readcmds = process.env.READ_COMMAND || "false"
-global.readmessage = process.env.READ_MESSAGE || "false"
-global.readmessagefrom = process.env.READ_MESSAGE_FROM || "255698101622,255xxxxxxxx";
+global.readcmds = process.env.READ_COMMAND || "true"
+global.readmessage = process.env.READ_MESSAGE || "true"
+global.readmessagefrom = process.env.READ_MESSAGE_FROM || "anybody";
 
 
 //========================= [ AUTO SAVE & READ STATUS ] =========================\\
 global.read_status = process.env.AUTO_READ_STATUS || "true"
-global.save_status = process.env.AUTO_SAVE_STATUS || "false"
-global.save_status_from =  process.env.SAVE_STATUS_FROM  || "null,255xxxxxxxx";
-global.read_status_from =  process.env.READ_STATUS_FROM  ||  "255698101622,255xxxxxxxx";
+global.save_status = process.env.AUTO_SAVE_STATUS || "true"
+global.save_status_from =  process.env.SAVE_STATUS_FROM  || "anybody";
+global.read_status_from =  process.env.READ_STATUS_FROM  ||  "anybody";
 
 global.api_smd = "https://api-smd-1.vercel.app"
 global.scan = "https://myqr-43bb863fa5eb.herokuapp.com/";
@@ -137,6 +137,6 @@ fs.watchFile(file, () => { fs.unwatchFile(file);console.log(`Update'${__filename
   //MsgsInLog: process.env.MSGS_IN_LOG|| "false", // "true"  to see messages , "log" to open logs , "false" to hide logs messages
   //readcmds:process.env.READ_COMMANDS|| "false", 
   //alwaysonline:process.env.WAPRESENCE|| "unavailable", // 'unavailable' | 'online' | 'composing' | 'recording' | 'paused'
-  //read_status: process.env.AUTO_READ_STATUS || "false",
-  //save_status: process.env.AUTO_SAVE_STATUS || "false",
+  //read_status: process.env.AUTO_READ_STATUS || "true",
+  //save_status: process.env.AUTO_SAVE_STATUS || "true",
  
